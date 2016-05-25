@@ -34,6 +34,17 @@ $.simpleWeather({
         $('#d1 .day').text(weather.forecast[1].date);
         $('#d1 .temp').text(weather.forecast[1].high);
         $('#d1 i').addClass('icon-' + weather.forecast[1].code);
+        
+        // add custom body class
+        if (weather.code >= 26 && weather.code <= 30){
+            
+            //remove class
+            $('body').removeClass();
+            //add class for cloudy
+            $('body').addClass('bg-1');
+            
+        }
+        
 
       // Entire weather object
       console.log();
@@ -92,6 +103,9 @@ var getWeather = function(location) {
   });
 
 };
+
+
+
 
 
 
