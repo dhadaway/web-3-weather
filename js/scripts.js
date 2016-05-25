@@ -28,6 +28,12 @@ $.simpleWeather({
       $('#cheney .temp').text(weather.temp);
       $('#cheney .city').text(weather.city);
       $('#cheney .icon').img(weather.icon);
+        //display icon
+        $('.geo i').addClass('icon-' + weather.code);
+        //get the forcast
+        $('#d1').text(weather.forecast[1].date);
+        $('#d1').text(weather.forecast[1].high);
+        $('#d1').text(weather.forecast[1].code);
 
       // Entire weather object
       console.log();
@@ -39,10 +45,55 @@ $.simpleWeather({
   });
 
 
-  // Get Geo Location
+// Get Geo Location
+
   // Check for GeoLocation Support on Browser
 if ('geolocation' in navigator) {
-  $('.geo').show();
+  $('.geo button').show();
 } else {
-  $('.geo').hide();
+  $('.geo button').hide();
+  $('.geo').prepend('<p>Geolocation Not Supported</p>');
 }
+
+// On Click, Get Geolocation, Call Weather Function
+$('.geo button').click( function() {
+  
+     
+    //load weather using your lat/lng coordinates
+    navigator.geolocation.getCurrentPosition(function(position) {
+        getWeather(position.coords.latitude+','+position.coords.longitude); 
+    });
+   
+});
+
+    //Get geolocation weather    
+var getWeather = function(location) {
+
+    $.simpleWeather({
+    location: location,
+    woeid: '',
+    unit: 'f',
+    success: function(weather) {
+      
+      // Display Data
+      $('#cheney .temp').text(weather.temp);
+      $('#cheney .city').text(weather.city);
+      $('#cheney .icon').img(weather.icon);
+        //display icon
+        $('.geo i').addClass('icon-' + weather.code);
+    
+      // Entire weather object
+      console.log();
+    },
+    error: function(error) {
+      // Show if weather cannot be retreived
+    }
+  
+  });
+
+};
+
+
+
+
+
