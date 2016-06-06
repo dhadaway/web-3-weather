@@ -36,6 +36,15 @@ $.simpleWeather({
         $('#d1 i').addClass('icon-' + weather.forecast[1].code);
         
         // add custom body class
+        
+        if (weather.code >= 0 && weather.code <= 30){
+            
+            //remove class
+            $('body').removeClass();
+            //add class for cloudy
+            $('body').addClass('bg-1');
+            
+        }
         if (weather.code >= 26 && weather.code <= 30){
             
             //remove class
