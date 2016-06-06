@@ -69,7 +69,7 @@ $.simpleWeather({
             //remove class
             $('body').removeClass();
             //add class for showers
-            $('body').addClass('bg-3');
+            $('body').addClass('bg-4');
             
         }
         
@@ -78,7 +78,7 @@ $.simpleWeather({
             //remove class
             $('body').removeClass();
             //add class for snow and sleet
-            $('body').addClass('bg-4');
+            $('body').addClass('bg-5');
             
         }
         
@@ -87,7 +87,7 @@ $.simpleWeather({
             //remove class
             $('body').removeClass();
             //add class for dust and foggy
-            $('body').addClass('bg-5');
+            $('body').addClass('bg-6');
             
         }
         
@@ -96,7 +96,7 @@ $.simpleWeather({
             //remove class
             $('body').removeClass();
             //add class for windy and cold
-            $('body').addClass('bg-6');
+            $('body').addClass('bg-7');
             
         }
         
@@ -105,7 +105,7 @@ $.simpleWeather({
             //remove class
             $('body').removeClass();
             //add class for cloudy
-            $('body').addClass('bg-7');
+            $('body').addClass('bg-8');
             
         }
         
@@ -114,7 +114,7 @@ $.simpleWeather({
             //remove class
             $('body').removeClass();
             //add class for clear night
-            $('body').addClass('bg-8');
+            $('body').addClass('bg-9');
             
         }
         
@@ -123,7 +123,7 @@ $.simpleWeather({
             //remove class
             $('body').removeClass();
             //add class for sunny
-            $('body').addClass('bg-9');
+            $('body').addClass('bg-10');
             
         }
         
@@ -132,27 +132,11 @@ $.simpleWeather({
             //remove class
             $('body').removeClass();
             //add class for hot
-            $('body').addClass('bg-10');
-            
-        }
-        
-        if (weather.code >= 37 && weather.code <= 39 && weather.code = 45 && weather.code = 47){
-            
-            //remove class
-            $('body').removeClass();
-            //add class for thunderstorms
             $('body').addClass('bg-11');
             
         }
         
-        if (weather.code >= 0 && weather.code <= 2){
-            
-            //remove class
-            $('body').removeClass();
-            //add class for hurricans
-            $('body').addClass('bg-1');
-            
-        }
+
         
 
       // Entire weather object
