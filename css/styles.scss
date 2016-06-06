@@ -4,13 +4,20 @@
 
 /* My Styles */
 #cheney i {
-    color: aqua;
+    color: white;
     font-size: 6em;
 }
 
+.menu {
+    margin: 2em 3em;
+}
 
 
 /* custon background */
+.bg-0 {
+background: pink;
+}
+
 .bg-1 {
 background: #e9d362; /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #e9d362 , #333333); /* Chrome 10-25, Safari 5.1-6 */
