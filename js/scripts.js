@@ -13,9 +13,13 @@
 // My Scripts
 
 // activate tabs
-$('.menu .item')
-  .tab()
-;
+
+$(document).ready(function(){
+    $('.tabular.menu .item').tab({history:false});
+});
+ 
+
+
 
 // get cheney weather
 $.simpleWeather({
@@ -324,7 +328,6 @@ var getWeather = function(location) {
   });
 
 };
-
 
 
 
