@@ -272,7 +272,7 @@ $.simpleWeather({
       // Show if weather cannot be retreived
     }
 
-
+});
 
 // Get Geo Location
 
