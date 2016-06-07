@@ -35,9 +35,9 @@ $.simpleWeather({
         //display icon
         $('#cheney i').addClass('icon-' + weather.code);
         //get the forcast
-        $('#d1 .day').text(weather.forecast[1].date);
-        $('#d1 .temp').text(weather.forecast[1].high);
-        $('#d1 i').addClass('icon-' + weather.forecast[1].code);
+        $('#d1-c .day').text(weather.forecast[1].date);
+        $('#d1-c .temp').text(weather.forecast[1].high);
+        $('#d1-c i').addClass('icon-' + weather.forecast[1].code);
 
         
         // add custom body class
@@ -163,9 +163,9 @@ $.simpleWeather({
         //display icon
         $('#buckley i').addClass('icon-' + weather.code);
         //get the forcast
-        $('#d1 .day').text(weather.forecast[1].date);
-        $('#d1 .temp').text(weather.forecast[1].high);
-        $('#d1 i').addClass('icon-' + weather.forecast[1].code);
+        $('#d1-b .day').text(weather.forecast[1].date);
+        $('#d1-b .temp').text(weather.forecast[1].high);
+        $('#d1-b i').addClass('icon-' + weather.forecast[1].code);
         
         // add custom body class
         
