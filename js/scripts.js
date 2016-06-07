@@ -39,7 +39,6 @@ $.simpleWeather({
         $('#d1 .temp').text(weather.forecast[1].high);
         $('#d1 i').addClass('icon-' + weather.forecast[1].code);
 
-        console.log("weather");
         
         // add custom body class
         
@@ -327,7 +326,7 @@ var getWeather = function(location) {
 
 
 
-
+console.log('weather.icon');
 
 
 
