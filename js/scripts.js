@@ -33,11 +33,13 @@ $.simpleWeather({
       $('#cheney .city').text(weather.city);
       $('#cheney .icon').img(weather.icon);
         //display icon
-        $('.geo i').addClass('icon-' + weather.code);
+        $('#cheney i').addClass('icon-' + weather.code);
         //get the forcast
         $('#d1 .day').text(weather.forecast[1].date);
         $('#d1 .temp').text(weather.forecast[1].high);
         $('#d1 i').addClass('icon-' + weather.forecast[1].code);
+
+        console.log("weather");
         
         // add custom body class
         
@@ -160,7 +162,7 @@ $.simpleWeather({
       $('#buckley .city').text(weather.city);
       $('#buckley .icon').img(weather.icon);
         //display icon
-        $('.geo i').addClass('icon-' + weather.code);
+        $('#buckley i').addClass('icon-' + weather.code);
         //get the forcast
         $('#d1 .day').text(weather.forecast[1].date);
         $('#d1 .temp').text(weather.forecast[1].high);
@@ -306,11 +308,11 @@ var getWeather = function(location) {
     success: function(weather) {
       
       // Display Data
-      $('#cheney .temp').text(weather.temp);
-      $('#cheney .city').text(weather.city);
-      $('#cheney .icon').img(weather.icon);
+      $('#geo .temp').text(weather.temp);
+      $('#geo .city').text(weather.city);
+      $('#geo .icon').img(weather.icon);
         //display icon
-        $('.geo i').addClass('icon-' + weather.code);
+        $('#geo i').addClass('icon-' + weather.code);
     
       // Entire weather object
       console.log();
