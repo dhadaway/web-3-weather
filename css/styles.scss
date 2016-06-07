@@ -3,22 +3,50 @@
 @import 'fonticons';
 
 /* My Styles */
-#cheney i {
+#cheney i,
+#buckley i {
     color: black;
-    font-size: 6em;
 }
 
-#cheney {
-    margin: 3em;
+#d1-c i,
+#d1-b i,
+#geo i {
+    color: black;
+}
+
+#d1-c,
+#d1-b,
+#geo {
+    margin-bottom: 1em;
 }
 
 
-/* custon background */
+#cheney,
+#buckley,
+#geo {
+    margin: 2em 0 2em 0;
+}
+
+h3{
+    margin-bottom:-1em;
+}
+
+#geo {
+    display: block;
+}
+
+#geo-btn {
+    margin-top: 2em;
+}
+
+
 
 
 .bg-0{
 background:pink;
 }
+
+
 
 .bg-1 {
 background: #e9d362; /* fallback for old browsers */
