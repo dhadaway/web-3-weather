@@ -50,7 +50,7 @@ $.simpleWeather({
             
         }
         
-        if (weather.code >= 3 && weather.code <= 4 && weather.code >= 37 && weather.code <= 39 && weather.code = 45 && weather.code = 47){
+        if (weather.code >= 3 && weather.code <= 4 && weather.code >= 37 && weather.code <= 39 && weather.code === 45 && weather.code === 47){
             
             //remove class
             $('body').removeClass();
@@ -59,7 +59,7 @@ $.simpleWeather({
             
         }
         
-        if (weather.code >= 5 && weather.code <= 10 && weather.code = 35){
+        if (weather.code >= 5 && weather.code <= 10 && weather.code === 35){
             
             //remove class
             $('body').removeClass();
@@ -68,7 +68,7 @@ $.simpleWeather({
             
         }
         
-        if (weather.code >= 11 && weather.code <= 12 && weather.code = 40){
+        if (weather.code >= 11 && weather.code <= 12 && weather.code === 40){
             
             //remove class
             $('body').removeClass();
@@ -77,7 +77,7 @@ $.simpleWeather({
             
         }
         
-        if (weather.code >= 13 && weather.code <= 18 && weather.code >=42 && weather.code <=43 && weather.code = 46){
+        if (weather.code >= 13 && weather.code <= 18 && weather.code >=42 && weather.code <=43 && weather.code === 46){
             
             //remove class
             $('body').removeClass();
@@ -104,7 +104,7 @@ $.simpleWeather({
             
         }
         
-        if (weather.code >= 26 && weather.code <= 30 && weather.code = 44){
+        if (weather.code >= 26 && weather.code <= 30 && weather.code === 44){
             
             //remove class
             $('body').removeClass();
@@ -168,7 +168,7 @@ $.simpleWeather({
         
         // add custom body class
         
-        if (weather.code >= 0 && weather.code <= 2){
+               if (weather.code >= 0 && weather.code <= 2){
             
             //remove class
             $('body').removeClass();
@@ -177,7 +177,7 @@ $.simpleWeather({
             
         }
         
-        if (weather.code >= 3 && weather.code <= 4 && weather.code >= 37 && weather.code <= 39 && weather.code = 45 && weather.code = 47){
+        if (weather.code >= 3 && weather.code <= 4 && weather.code >= 37 && weather.code <= 39 && weather.code === 45 && weather.code === 47){
             
             //remove class
             $('body').removeClass();
@@ -186,7 +186,7 @@ $.simpleWeather({
             
         }
         
-        if (weather.code >= 5 && weather.code <= 10 && weather.code = 35){
+        if (weather.code >= 5 && weather.code <= 10 && weather.code === 35){
             
             //remove class
             $('body').removeClass();
@@ -195,7 +195,7 @@ $.simpleWeather({
             
         }
         
-        if (weather.code >= 11 && weather.code <= 12 && weather.code = 40){
+        if (weather.code >= 11 && weather.code <= 12 && weather.code === 40){
             
             //remove class
             $('body').removeClass();
@@ -204,7 +204,7 @@ $.simpleWeather({
             
         }
         
-        if (weather.code >= 13 && weather.code <= 18 && weather.code >=42 && weather.code <=43 && weather.code = 46){
+        if (weather.code >= 13 && weather.code <= 18 && weather.code >=42 && weather.code <=43 && weather.code === 46){
             
             //remove class
             $('body').removeClass();
@@ -231,7 +231,7 @@ $.simpleWeather({
             
         }
         
-        if (weather.code >= 26 && weather.code <= 30 && weather.code = 44){
+        if (weather.code >= 26 && weather.code <= 30 && weather.code === 44){
             
             //remove class
             $('body').removeClass();
@@ -266,18 +266,11 @@ $.simpleWeather({
             $('body').addClass('bg-11');
             
         }
-        
 
-        
-
-      // Entire weather object
-      console.log();
     },
     error: function(error) {
       // Show if weather cannot be retreived
     }
-
-  });
 
 
 
@@ -286,7 +279,8 @@ $.simpleWeather({
   // Check for GeoLocation Support on Browser
 if ('geolocation' in navigator) {
   $('.geo button').show();
-} else {
+} 
+else {
   $('.geo button').hide();
   $('.geo').prepend('<p>Geolocation Not Supported</p>');
 }
